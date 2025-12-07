@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".RendezVousActivity">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes rendez-vous"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Liste des rendez-vous -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRdv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_rendez_vous" />
+
+    <!-- Bouton Prendre RDV -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPrendreRdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Prendre un rendez-vous"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:paddingVertical="12dp"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_calendar_add"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary" />
+
+</LinearLayout>

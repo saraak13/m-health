@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Titre : Bonjour Nom -->
+        <TextView
+            android:id="@+id/helloUser"
+            android:text="Bonjour, [Nom]"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:textColor="#2E3A59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Grid des cartes -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- Carte 1 : Dossier médical -->
+            <LinearLayout
+                android:id="@+id/btnDossier"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/card_background"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:src="@drawable/ic_health"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+
+                <TextView
+                    android:text="Dossier médical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- Carte 2 : Rendez-vous -->
+            <LinearLayout
+                android:id="@+id/btnRdv"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="@drawable/card_background"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:src="@drawable/ic_calendar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+
+                <TextView
+                    android:text="Rendez-vous"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- Carte 3 : Médicaments -->
+            <LinearLayout
+                android:id="@+id/btnMedicaments"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="@drawable/card_background"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:src="@drawable/ic_pill"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+
+                <TextView
+                    android:text="Médicaments"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- Carte 4 : Messages -->
+            <LinearLayout
+                android:id="@+id/btnMessage"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="@drawable/card_background"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:src="@drawable/ic_chat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+
+                <TextView
+                    android:text="Messages"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- Carte 5 : Notifications -->
+            <LinearLayout
+                android:id="@+id/btnNotif"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="@drawable/card_background"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:src="@drawable/ic_notification"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+
+                <TextView
+                    android:text="Notifications"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

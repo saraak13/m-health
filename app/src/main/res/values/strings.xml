@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">M-health</string>
+    <string name="user_avatar">User Avatar</string>
+<string name="options">Options</string>
+<string name="edit_user">Edit User</string>
+<string name="delete_user">Delete User</string>
+</resources>
